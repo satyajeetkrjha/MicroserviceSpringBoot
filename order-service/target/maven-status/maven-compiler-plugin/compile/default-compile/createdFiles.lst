@@ -1,8 +1,11 @@
 com/Microservices/OrderService/controller/OrderController.class
+com/Microservices/OrderService/dto/InventoryResponse$InventoryResponseBuilder.class
+com/Microservices/OrderService/dto/InventoryResponse.class
 com/Microservices/OrderService/dto/OrderRequest.class
 com/Microservices/OrderService/repository/OrderRepository.class
 com/Microservices/OrderService/dto/OrderLineItemsDto.class
 com/Microservices/OrderService/service/OrderService.class
 com/Microservices/OrderService/OrderServiceApplication.class
 com/Microservices/OrderService/model/OrderLineItems.class
+com/Microservices/OrderService/config/WebClientConfig.class
 com/Microservices/OrderService/model/Order.class
