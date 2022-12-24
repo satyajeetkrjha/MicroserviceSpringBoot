@@ -18,7 +18,14 @@ public class InventoryService {
     private final InventoryRepository inventoryRepository;
     @SneakyThrows
     @Transactional(readOnly = true)
-    public boolean isInStock(String skuCode) {
-        return inventoryRepository.findBySkuCode(skuCode).isPresent();
+    public List<InventoryResponse> isInStock(List<String> skuCode) {
+        log.info("Checking Inventory");
+        return inventoryRepository.findBySkuCodeIn(skuCode).stream()
+                .map(inventory ->
+                        InventoryResponse.builder()
+                                .skuCode(inventory.getSkuCode())
+                                .isInStock(inventory.getQuantity() > 0)
+                                .build()
+                ).toList();
     }
 }
