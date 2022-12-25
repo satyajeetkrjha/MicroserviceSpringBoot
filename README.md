@@ -7,3 +7,6 @@
   <li>MySql</li>
   <li>Mongodb</li>
   
+<br> Next things </br>
+   <li> Circuit breaker </li>
+   <li>  Ditrsibuted tracing </li>
