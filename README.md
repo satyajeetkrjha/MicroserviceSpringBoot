@@ -9,4 +9,4 @@
   
 <br> Next things </br>
    <li> Circuit breaker </li>
-   <li>  Ditrsibuted tracing </li>
+   <li>  Distributed tracing </li>
